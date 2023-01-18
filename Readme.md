@@ -1,6 +1,6 @@
 # Interview suallar & cavablar
 
-[https://github.com/sudheerj/javascript-interview-questions](https://github.com/sudheerj/javascript-interview-questions)
+Credit: [https://github.com/sudheerj/javascript-interview-questions](https://github.com/sudheerj/javascript-interview-questions)
 
 ### 1. Explain event delegation
 
