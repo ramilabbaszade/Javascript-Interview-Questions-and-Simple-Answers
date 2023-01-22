@@ -6,7 +6,7 @@ Credit: [https://github.com/sudheerj/javascript-interview-questions](https://git
 
 Event delegation is a way to handle events that happen on multiple elements at once, by using a single event handler on a parent element.
 
-Imagine you have a basket of apples, and you want to know when one of the apples is picked. Instead of putting a separate tag on each apple, you can put a tag on the basket and when someone picks an apple, the basket will know.
+First example: Imagine you have a basket of apples, and you want to know when one of the apples is picked. Instead of putting a separate tag on each apple, you can put a tag on the basket and when someone picks an apple, the basket will know.
 
 In the same way, on a website, you can have a lot of buttons, and you can put an event listener on the parent element (like a container) and check which button was clicked.
 
@@ -16,9 +16,7 @@ So, event delegation is like having a basket with many apples, and you put a tag
 
 Event delegation is a way to handle events in JavaScript that allows you to add an event listener to a parent element, rather than adding individual event listeners to multiple child elements.
 
-Here's an example of how it works:
-
-Imagine you have a toy box with a bunch of toy cars inside. You want to be able to make the toy cars move when you press a button, but you don't want to add a button to each individual toy car. Instead, you can add a single button to the toy box, and use event delegation to handle the button press.
+Second example: Imagine you have a toy box with a bunch of toy cars inside. You want to be able to make the toy cars move when you press a button, but you don't want to add a button to each individual toy car. Instead, you can add a single button to the toy box, and use event delegation to handle the button press.
 
 Here's how you could do this in JavaScript:
 
@@ -35,8 +33,6 @@ toyBox.addEventListener('click', function(event) {
   }
 });
 ```
-
----
 
 ### 2. Explain how 'this' keyword works in JavaScript
 
@@ -64,9 +60,7 @@ toyBox.play();  // Output: "Playing with my teddy bear and my doll"
 
 ```
 
----
-
-1. Can you give an example of one of the ways that working with 'this' has changed in ES6?
+**2.1 Can you give an example of one of the ways that working with 'this' has changed in ES6?**
 
 In ES6 (also known as ECMAScript 2015), the way that the **`this`** keyword works inside arrow functions is different than it is in regular functions.
 
@@ -91,8 +85,6 @@ const person = {
 person.greet();  // Output: "Hello, my name is Alice"
 person.greetArrow();  // Output: "Hello, my name is undefined"
 ```
-
----
 
 ### 3. Explain how prototypal inheritance works.
 
@@ -175,7 +167,7 @@ In JavaScript, there are several language constructs that can be used for iterat
 
 • Array.forEach() method: This method iterates over the elements of an array and executes a callback function for each element.
 
-### 7. • Can you describe the main difference between the `Array.forEach()` loop and `Array.map()` methods and why you would pick one versus the other?
+### 7. Can you describe the main difference between the `Array.forEach()` loop and `Array.map()` methods and why you would pick one versus the other?
 
 In JavaScript, the **`Array.forEach()`** and **`Array.map()`** methods are both used to iterate over the elements of an array and transform the elements in some way. However, there are some key differences between these two methods:
 
@@ -255,7 +247,7 @@ Here are some examples of native objects:
 
 In general, host objects are specific to the host environment in which the JavaScript code is running, while native objects are part of the JavaScript language and are available in any JavaScript environment.
 
-### 10. • Explain the difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
+### 10. Explain the difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
 
 In JavaScript, there are several ways to create functions and objects, and the way in which you create them can have different effects on the resulting objects and their behavior.
 
@@ -284,7 +276,7 @@ person2.sayHi();  // Output: "Hi, my name is John"
 
 ```
 
-### 11. • Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
+### 11. Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
 
 In JavaScript, there are two ways to define a function: as a function declaration, or as a function expression.
 
@@ -312,7 +304,7 @@ var bar = function() {
 
 ```
 
-### 12. • Can you explain what `Function.call` and `Function.apply` do? What's the notable difference between the two?
+### 12. Can you explain what `Function.call` and `Function.apply` do? What's the notable difference between the two?
 
 In JavaScript, the **`Function.call()`** and **`Function.apply()`** methods allow you to call a function with a specific **`this`** value and arguments.
 
@@ -354,7 +346,7 @@ greet.apply(person, ["Hello"]);  // Output: "Hello, my name is John"
 
 The main difference between the **`Function.call()`** and **`Function.apply()`** methods is the way in which the arguments are passed to the function. The **`Function.call()`** method requires the arguments to be passed as separate parameters, while the **`Function.apply()`** method requires the arguments to be passed as an array.
 
-### 13. • Explain `Function.prototype.bind`.
+### 13. Explain `Function.prototype.bind`.
 
 In JavaScript, the **`Function.prototype.bind()`** method allows you to create a new function that is bound to a specific **`this`** value and arguments. It has the following syntax:
 
@@ -382,7 +374,7 @@ In this example, the **`bind()`** method creates a new function called **`sayHel
 
 The **`bind()`** method is often used to bind a function to a specific **`this`** value when passing the function as a callback or to create a partial function that pre-fills some of the arguments.
 
-### 14. • What's the difference between feature detection, feature inference, and using the UA string?
+### 14. What's the difference between feature detection, feature inference, and using the UA string?
 
 When developing for the web, you often need to know what features are available in the user's browser in order to provide an optimal experience. There are several ways to determine which features are available, each with their own advantages and disadvantages. These include feature detection, feature inference, and using the user agent (UA) string.
 
@@ -395,7 +387,7 @@ Another way to detect browser feature support is to check the user agent (UA) st
 
 In general, feature detection is considered the best practice when checking for feature support, as it directly tests for the existence of a specific feature, without making any assumptions. However, depending on the feature you're trying to detect, you might use a combination of all three method, or even use another one.
 
-### 15. • Explain "hoisting".
+### 15. Explain "hoisting".
 
 "Hoisting" is a term used in JavaScript to describe the behavior of variable and function declarations being moved to the top of their scope.
 
@@ -407,7 +399,7 @@ But with hoisting, it's like the toys are "magically" being lifted to the top of
 
 This behavior can be confusing especially for beginners, and it's often recommended to always declare all variables at the top of their scope to avoid any surprises and unexpected bugs.
 
-### 16. • Describe event bubbling.
+### 16. Describe event bubbling.
 
 Event bubbling is a term used in JavaScript to describe how events move through the HTML elements on a webpage.
 
@@ -419,7 +411,7 @@ This process can be useful in some cases because it allows you to listen for eve
 
 But it can also be a source of confusion, especially when you want to handle an event on a specific element, in this case, you have to make sure to stop the event from "bubbling up" to the parent elements by using a method called event.stopPropagation()
 
-### 17. • Describe event capturing.
+### 17. Describe event capturing.
 
 Event capturing is a term used in JavaScript to describe how events move through the HTML elements on a webpage in the opposite direction of event bubbling.
 
@@ -431,7 +423,7 @@ This process is called event capturing, and it allows you to handle an event on 
 
 Just like when you are playing catch and you want the ball to go to a specific person, in JavaScript you can specify which elements you want to handle the event first by using a method called addEventListener and setting the 3rd parameter as true, this will make the event go through capturing phase first, before bubbling.
 
-### 18. • What's the difference between an "attribute" and a "property"?
+### 18. What's the difference between an "attribute" and a "property"?
 
 In JavaScript, when you are working with HTML elements, you might come across the terms "attribute" and "property". These terms are often used interchangeably, but they refer to different things.
 
@@ -448,9 +440,27 @@ In summary, an attribute is a value that is set on an HTML element in the markup
 
 It's important to note that sometimes the attribute and property may have different values, for example, when you set a value to an element property programmatically, it will change the corresponding attribute, but if you change the attribute value directly via HTML, the property value remain the same unless you refresh the page.
 
-### 19. • What are the pros and cons of extending built-in JavaScript objects?
+### 19. What are the pros and cons of extending built-in JavaScript objects?
 
-### 20. • What is the difference between `==` and `===`?
+Sometimes, people like to add new things to things that already exist in JavaScript, like the Array or String objects. This is called "extending" the built-in objects.
+
+There are some good things and some bad things about doing this.
+
+The good things are:
+
+- You can add new features that you think are missing in the built-in objects.
+- You can make your code shorter and more readable by using the new features that you've added.
+
+The bad things are:
+
+- It can make your code harder to understand for other people who might read it.
+- If you add something new to a built-in object, other people's code might not work well with yours.
+- It can also lead to naming conflicts, where your new feature has the same name as something that already existed.
+- It can be a bad practice, and it's not recommended by the javascript community.
+
+So, when you think about extending built-in JavaScript objects, it's important to weigh the pros and cons and make sure you're doing it for the right reasons. It's better to use your own custom objects or use libraries that provide the functionality you need and avoid extending the built-in objects.
+
+### 20. What is the difference between `==` and `===`?
 
 The **`==`** operator, also known as the "loose equality" or "abstract equality" operator, compares two values for equality after converting them to a common type. For example, if you compare a number and a string with the same value (e.g., **`3 == "3"`**), the operator will return **`true`** because JavaScript will convert the string to a number before making the comparison.
 
@@ -467,11 +477,27 @@ In this example, 0 and false are equivalent, but they are not of the same type, 
 
 In general, it's considered best practice to use the **`===`** operator, because it compares values and their types, avoiding unexpected behavior and bugs when comparing different types. However, there are some situations where **`==`** is useful, such as when you want to compare values that have different types but should be treated as equal.
 
-### 20. • Explain the same-origin policy with regards to JavaScript.
+### 20. Explain the same-origin policy with regards to JavaScript.
 
-### 21. • Why is it called a Ternary operator, what does the word "Ternary" indicate?
+The same-origin policy is a rule that helps to keep the information on your website safe. It says that a website can only access information from other websites if those websites are from the same place.
 
-### 22. • What is strict mode? What are some of the advantages/disadvantages of using it?
+Imagine that your website is a big house, and all the other websites are other big houses. The same-origin policy says that people from your house can only go into other houses if they're from the same neighborhood.
+
+For example, if your website is "**[www.mywebsite.com](http://www.mywebsite.com/)**", it can only access information from other websites that are also "**[www.mywebsite.com](http://www.mywebsite.com/)**". It can't access information from "**[www.otherwebsite.com](http://www.otherwebsite.com/)**" or "**[www.notmywebsite.com](http://www.notmywebsite.com/)**" unless they specifically allow it.
+
+This helps to protect you and your visitors from bad websites that might try to steal your information or do something harmful. The same-origin policy is one of the ways that your web browser helps to keep you safe online.
+
+### 21.  Why is it called a Ternary operator, what does the word "Ternary" indicate?
+
+The word "ternary" comes from the Latin word "ternarius" which means "composed of three parts" .
+
+In programming, a Ternary operator is called so because it is composed of three parts. It is a shorthand way of writing an **`if-else`** statement, and it takes the form of **`(condition) ? (if true) : (if false)`**. It is a shorthand way of writing if-else statement and it's often called a shorthand of if-else statement.
+
+The Ternary operator is a compact and simple way of writing an if-else statement, It's a shorthand way of expressing a simple branching statement that assigns the value of one expression to a variable depending on the boolean value of another expression
+
+In short, Ternary operator is called so because it is composed of three parts: a condition, a value to return if the condition is true, and a value to return if the condition is false.
+
+### 22. What is strict mode? What are some of the advantages/disadvantages of using it?
 
 Strict mode is a feature in JavaScript that enables "strict" error checking and changes the behavior of certain language features. When strict mode is enabled, it catches some common coding mistakes and makes them throw errors, instead of silently failing or producing unpredictable results.
 
@@ -492,9 +518,26 @@ Disadvantages of using strict mode include:
 
 Overall, strict mode is a feature that can help you write more robust, maintainable and secure code. However, it's important to weigh the advantages and disadvantages and decide whether strict mode is the best option for a specific project and development team.
 
-### 23. • What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
+### 23. What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
 
-### 24. • What tools and techniques do you use debugging JavaScript code?
+Advantages:
+
+- Stronger typing: Some languages that compile to JavaScript, like TypeScript, have built-in support for strong typing, which can help catch errors early and make the code more robust. This means that variables have specific types (such as number or string) and the compiler will check that you are using them correctly.
+- Better tooling: Some languages that compile to JavaScript, like CoffeeScript, provide a more concise and expressive syntax, which can make the code more readable and easier to write. This can also lead to more efficient and less error-prone code.
+- Access to new features: Some languages that compile to JavaScript, like Dart, provide access to features that are not available in JavaScript, such as classes and interfaces.
+- Better performance: Some languages that compile to JavaScript, like Dart, provide better performance than JavaScript, by providing features such as ahead-of-time (AOT) compilation and garbage collection.
+
+Disadvantages:
+
+- Extra setup: In order to use a language that compiles to JavaScript, you'll need to set up a build process, which can be complex and time-consuming. This can include installing and configuring additional tools and libraries.
+- Extra Learning: Developers need to learn a new language and its syntax, which can take time and effort.
+- Browser support: Some languages that compile to JavaScript, like Dart, may not be supported by all browsers, which can limit the reach of your application.
+- Additional complexity: The use of a language that compiles to JavaScript can add an additional layer of complexity to the development process.
+- Browser compatibility issues: The generated javascript code may not be compatible with all browsers and versions, which can create compatibility issues.
+
+In summary, the use of a language that compiles to JavaScript can provide advantages such as better typing, tooling, and performance. However, it also introduces additional setup, learning, and compatibility issues that should be considered. Whether or not to use a language that compiles to JavaScript depends on the specific needs of your project and the trade-offs you are willing to make.
+
+### 24. What tools and techniques do you use debugging JavaScript code?
 
 There are several tools and techniques that can be used to debug JavaScript code, some of the most commonly used are:
 
@@ -532,7 +575,7 @@ To achieve immutability in JavaScript, you have several options:
 
 In summary, mutable objects can be modified after they're created, whereas immutable objects can't be. In JavaScript, some examples of immutable objects are numbers, strings, and booleans. Immutable objects are useful in terms of keeping the state of an application consistent, predictable and reduce bugs, but it can come at a cost of performance. You can achieve immutability in JavaScript by using **`Object.freeze()`**, **`Object.assign()`**, or libraries like **`immutable.js`**.
 
-### 26. • Explain the difference between synchronous and asynchronous functions.
+### 26. Explain the difference between synchronous and asynchronous functions.
 
 Okay, imagine you and your friend are playing a game where you take turns to draw a card from a deck of cards. If you take turns one at a time, and you can only pick up one card at a time, that's like a "synchronous" game. But if you and your friend can pick up multiple cards at the same time and put them on a different pile, that's like an "asynchronous" game.
 
@@ -558,7 +601,7 @@ When the "event loop" is running, it looks at the call stack first and does the 
 
 So, in short, the "event loop" is the mechanism that manages the flow of tasks, the "call stack" is a list of currently executing functions, and the "task queue" is a list of functions waiting to be executed.
 
-### 28. • What are the differences between variables created using `let`, `var` or `const`?
+### 28. What are the differences between variables created using `let`, `var` or `const`?
 
 When we write computer programs, sometimes we need to store information in a special spot so we can use it later, just like how you put your toys in a toy box. These special spots are called "variables", and JavaScript has different ways of making these variables, like using "let", "var" or "const".
 
@@ -574,7 +617,60 @@ It's important to choose the right type of toy box depending on what you need to
 
 ### 29. What are the differences between ES6 class and ES5 function constructors?
 
-### 30. • Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?
+ES6 introduced a new way to create classes in JavaScript called "class syntax", it is a more simpler and easier way to create objects and their methods.
+
+ES5, on the other hand, uses a function constructor to create objects and their methods.
+
+Here are the main differences between the two:
+
+- Syntax: The syntax for creating classes in ES6 is much simpler and more similar to other object-oriented languages. With ES6 class syntax, you use the **`class`** keyword, followed by the class name, and then the class body inside curly braces.
+
+```jsx
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  sayHello() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+}
+```
+
+In contrast, in ES5, you create a function constructor and use the **`new`** keyword to create an object.
+
+```jsx
+function Person(name) {
+  this.name = name;
+  this.sayHello = function() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+}
+```
+
+- **`constructor`** method: In ES6, the **`constructor`** method is used to initialize the object's properties, whereas in ES5, the function constructor itself is used to initialize the object's properties.
+- **`prototype`**: In ES5, methods are added to the object's **`prototype`** property, whereas in ES6, methods are defined directly in the class body.
+
+```jsx
+
+// ES5
+Person.prototype.sayHello = function() {
+  console.log(`Hello, my name is ${this.name}`);
+}
+
+// ES6
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  sayHello() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+}
+```
+
+In summary, the ES6 class syntax
+
+### 30. Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?
 
 The new arrow function syntax (also known as "arrow functions") in JavaScript is a shorthand way of writing functions. It uses the "=>" symbol to define a function, rather than the traditional "function" keyword.
 
@@ -608,7 +704,7 @@ numbers.forEach(number => console.log(number));
 
 In short, the arrow function syntax is a shorthand for writing functions that can make your code shorter and more readable, it uses "=>" symbol instead of the "function" keyword. Its behavior of the **`this`** keyword also different from traditional function, making it useful in certain situations like working with object-oriented programming and closures.
 
-### 31.• What advantage is there for using the arrow syntax for a method in a constructor?
+### 31. What advantage is there for using the arrow syntax for a method in a constructor?
 
 Using the arrow function syntax for methods defined within a constructor has a major advantage over using the traditional function syntax, it allows you to correctly bind the value of the **`this`** keyword to the instance of the object, rather than the constructor function or the global context.
 
@@ -643,7 +739,7 @@ greet(); // logs "Hello, John"
 
 In summary, using arrow function syntax for methods defined within a constructor allows you to correctly bind the value of the **`this`** keyword to the instance of the object, which can prevent bugs and unexpected behavior.
 
-### 32. • What is the definition of a higher-order function?
+### 32. What is the definition of a higher-order function?
 
 A higher-order function is a special kind of function that can do something extra special. It's like a superhero function! It can either:
 
@@ -676,9 +772,33 @@ In the above example, **`operate`** is a higher-order function, because it takes
 
 So in short, a higher-order function is a function that can either take one or more functions as arguments or return a new function as its result. It can do special things with functions, like change them or use them in special ways.
 
-### 33.• Can you give an example for destructuring an object or an array?
+### 33. Can you give an example for destructuring an object or an array?
 
-### 34. • Can you give an example of generating a string with ES6 Template Literals?
+Sure! Here's an example of destructuring an object:
+
+```jsx
+let person = { name: "John", age: 30, city: "New York" };
+let { name, age } = person;
+console.log(name); // "John"
+console.log(age); // 30
+```
+
+In this example, we have an object called **`person`** with properties **`name`**, **`age`**, and **`city`**. We use the **`let {name, age} = person`** statement to "unpack" the **`name`** and **`age`** properties from the **`person`** object and assign them to new variables with the same name.
+
+Here is an example for destructuring an array:
+
+```jsx
+let colors = ['red', 'green', 'blue'];
+let [first, second] = colors;
+console.log(first); // "red"
+console.log(second); // "green"
+```
+
+In this example, we have an array called **`colors`** with 3 elements. We use the **`let [first, second] = colors`** statement to "unpack" the first and second elements of the **`colors`** array and assign them to new variables with the same name.
+
+With destructuring, you can extract data from arrays and objects easily and cleanly. It is a powerful feature that allows you to extract properties or elements from objects or arrays, and assign them to variables with a more concise and readable syntax.
+
+### 34. Can you give an example of generating a string with ES6 Template Literals?
 
 In JavaScript, we can use template literals (also known as template strings) to easily create strings that include the values of variables. These strings are defined using backticks (`) instead of quotes (' or ") and can include expressions that are evaluated and included in the final string.
 
@@ -703,11 +823,36 @@ console.log(result);
 // Output: "The sum of 5 and 10 is 15"
 ```
 
-### 35.• Can you give an example for destructuring an object or an array?
+### 37. Can you give an example of a curry function and why this syntax offers an advantage?
 
-### 36.Can you give an example of a curry function and why this syntax offers an advantage?
+Sure! Here's an example of a curry function in JavaScript:
 
-### 37.What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
+```jsx
+const curry = (fn) => {
+  return (...args) => {
+    if (args.length >= fn.length) {
+      return fn(...args);
+    }
+    return curry(fn.bind(null, ...args));
+  };
+}
+
+const add = curry((x, y) => x + y);
+const add5 = add(5);
+console.log(add5(3)); // 8
+console.log(add5(10)); // 15
+```
+
+In this example, we have a **`curry`** function that takes a function **`fn`** as an argument. The **`curry`** function returns a new function that takes any number of arguments (using the **`...args`** rest operator).
+
+The inner function first checks if the number of arguments passed to it is equal or greater than the number of arguments expected by the original function, **`fn`**. If it is, it calls **`fn`** with the passed arguments. If not, it returns a new function that is bound to the previous arguments, and this new function can be invoked with the remaining arguments to eventually invoke the original function **`fn`** with all the arguments.
+
+When we call **`const add5 = add(5)`** the **`add(5)`** invokes the returned function from **`curry`** and pass 5 as an argument, the inner function returns a new function that already has 5 as its first argument. This new function **`add5`** is now invoked with the remaining arguments and it returns the expected result.
+
+Curry functions allow us to create a new function that is already partially applied with some of the arguments, and this offers an advantage by allowing us to create reusable, composable, and more readable code.
+It also allows us to create functions with a more functional approach, where we can create more specialized functions by partially applying some of the arguments before calling the main function.
+
+### 38. What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
 
 Spread and Rest syntax are both ways to work with multiple items at once, but they are used in different ways.
 
@@ -730,11 +875,91 @@ console.log(sum(1, 2, 3, 4));  // 10
 
 In short, Spread syntax is like spreading things out, so you can see all of them, it allows you to take an array or an object and spread its items out into multiple elements. Rest syntax is like gathering things together, so you can carry them in one hand, it allows you to take multiple items and gather them together into an array or an object.
 
-### 38. How can you share code between files?
+### 39. How can you share code between files?
 
-### 39. Why you might want to create static class members?
+There are several ways to share code between files in JavaScript:
 
-### 40. What is the difference between `while` and `do-while` loops in JavaScript?
+1. **Exporting and Importing Modules**: JavaScript has built-in support for modules, which allows you to export variables, functions, or objects from one file and import them into another file.
+
+```jsx
+// file1.js
+export const myFunction = () => {...};
+export const myVariable = "Hello";
+
+// file2.js
+import { myFunction, myVariable } from "./file1.js";
+```
+
+2. **ES6 `export default` and `import`**: You can also use the **`export default`** syntax to export a single value from a file, and use the **`import`** statement to import it into another file.
+
+```jsx
+// file1.js
+const myFunction = () => {...};
+export default myFunction;
+
+// file2.js
+import myFunction from "./file1.js";
+```
+
+3. **CommonJS `module.exports` and `require`**: CommonJS is a module system that is used in environments like Node.js. In CommonJS, you use the **`module.exports`** object to export values from a file, and the **`require`** function to import them into another file.
+
+```jsx
+// file1.js
+const myFunction = () => {...};
+module.exports = myFunction;
+
+// file2.js
+const myFunction = require("./file1.js");
+```
+
+4. **Using script tags**: You can also include JavaScript files in an HTML document using the **`<script>`** tag, and the code in those files will be available to the whole document.
+
+```jsx
+<script src="file1.js"></script>
+<script src="file2.js"></script>
+```
+
+These are the main ways to share code between files, and the choice of which one to use depends on the specific use case and the environment where the code is running.
+
+It's worth noting that the last method is not recommended as it can cause issues with code order and it's not as flexible and maintainable as the other methods.
+
+### 40. Why you might want to create static class members?
+
+A static class member is a property or a method that belongs to a class itself, and not to any object created from that class.
+
+Imagine you have a class called "Teacher" and you want to store the number of teachers in your school. You can create a static variable called "numberOfTeachers" and increment it every time you create a new teacher.
+
+```jsx
+class Teacher{
+    static numberOfTeachers = 0;
+    constructor(name){
+        this.name = name;
+        Teacher.numberOfTeachers++;
+    }
+}
+const teacher1 = new Teacher("Ms. Smith");
+const teacher2 = new Teacher("Mr. Johnson");
+console.log(Teacher.numberOfTeachers); // 2
+```
+
+This way you can count how many teachers are in your school without creating an instance of the teacher class or keeping track of each teacher object you create.
+
+Another example is when you want to create a method that does not depend on any object's state, for example, a method that convert from Celsius to Fahrenheit, you don't need to know the current temperature to perform this conversion.
+
+```
+class Temperature {
+    static celsiusToFahrenheit(celsius) {
+        return celsius * 9/5 + 32;
+    }
+}
+console.log(Temperature.celsiusToFahrenheit(20)); // 68
+```
+
+In this example, the static method **`celsiusToFahrenheit`** is shared by all instances of the class and it's available even if you don't create an instance of the class.
+
+So, creating static class members is useful when you want to store information or methods that don't depend on the state of an object created from that class, it's a way to share some behavior or data across all instances of the class and make it available without creating an object.
+
+### 41. What is the difference between `while` and `do-while` loops in JavaScript?
 
 In JavaScript, both **`while`** and **`do-while`** loops are used to repeatedly execute a block of code, but they differ in when the code block is executed.
 
@@ -760,7 +985,7 @@ do {
 
 In short, the difference between a **`while`** loop and a **`do-while`** loop is that a **`while`** loop checks the condition before executing the code block and a **`do-while`** loop executes the code block first and then checks the condition.
 
-### 41. What is a promise? Where and how would you use promise?
+### 42. What is a promise? Where and how would you use promise?
 
 A promise is like a gift that you give to someone, it's something that you promise to do or give them in the future. In JavaScript, a promise is an object that represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.
 
@@ -779,7 +1004,7 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
 
 In short, A promise is like a gift that you give to someone, in JavaScript, it's an object that represents the eventual completion (or failure) of an asynchronous operation, and its resulting value. Promises are commonly used for handling asynchronous operations such as fetching data from a server, reading files, or performing animations.
 
-### 42. Discuss how you might use Object Oriented Programming principles when coding with JavaScript.****
+### 43. Discuss how you might use Object Oriented Programming principles when coding with JavaScript.****
 
 JavaScript is a multi-paradigm programming language, meaning it supports different programming styles, including object-oriented programming (OOP). OOP is a programming paradigm that uses objects, classes and their interactions to design applications and computer programs.
 
@@ -794,7 +1019,7 @@ In JavaScript, OOP is implemented using objects, constructors, and prototypes. H
 
 In short, Object-Oriented Programming principles can be applied to JavaScript by using objects, constructors, prototypes, classes, encapsulation and abstraction. These concepts
 
-### 43. What is the difference between e.target and e.currentTarget?
+### 44. What is the difference between e.target and e.currentTarget?
 
 In JavaScript, the **`e.target`** and **`e.currentTarget`** properties are used to access the element that triggered an event and the element that the event listener is attached to, respectively.
 
@@ -813,7 +1038,7 @@ In this example, if you attach an event listener to the parent div and you click
 
 In short, **`e.target`** refers to the element that actually triggered the event, and **`e.currentTarget`** refers to the element that the event listener is attached to.
 
-### 44. Is there any difference between Promises and callbacks? Which is better?
+### 45. Is there any difference between Promises and callbacks? Which is better?
 
 Promises and callbacks are both ways to handle asynchronous operations in JavaScript, but they work differently.
 
@@ -830,7 +1055,7 @@ Both callbacks and Promises can be used to handle asynchronous operations, but P
 
 In short, Promises and callbacks are both ways to handle async operations, but Promises provide a more consistent and modern way to handle async operations, making the code look more synchronous, making it easier to reason about async code, easier to handle errors, and providing an easy way to cancel the ongoing operation.
 
-### 45. What is recursion? When is the use of recursion useful in Javascript?
+### 46. What is recursion? When is the use of recursion useful in Javascript?
 
 Recursion is a technique in computer science where a function calls itself in order to solve a problem. A function that calls itself is called a recursive function.
 
@@ -852,7 +1077,7 @@ Another example is traversing a tree-like data structure, such as a file system,
 
 In short, recursion is a technique in computer science where a function calls itself to solve a problem, it is useful when the problem can be divided into smaller, similar sub-problems, it uses a base case to stop the recursion and it's useful in Javascript in situations like finding the factorial of a number, traversing a tree-like data structure, etc.
 
-### 46. What do you hear about DRY, KISS, YAGNI?
+### 47. What do you hear about DRY, KISS, YAGNI?
 
 DRY, KISS, and YAGNI are software development principles that help developers write better code.
 
@@ -862,7 +1087,7 @@ DRY, KISS, and YAGNI are software development principles that help developers wr
 
 These principles are closely related, and they help developers to write more maintainable, more scalable and easier to understand code. They are also important to help developers to make the right decisions when it comes to choosing the tools, technologies, and design patterns to use.
 
-### 47. What do you know about optional chaining operators? What benefits does it bring?
+### 48. What do you know about optional chaining operators? What benefits does it bring?
 
 Optional chaining operators are a new feature introduced in ECMAScript 2020, that allows you to access properties of an object without having to check if the object or any of its parent objects are undefined or null. It makes it easier to access deeply nested properties, without having to check for the existence of each object along the way.
 
@@ -898,7 +1123,7 @@ let user = {
 console.log(user?.getFullAddress()); // "Main St, New York"
 ```
 
-### 48. What patterns do you know and successfully use in JavaScript?
+### 49. What patterns do you know and successfully use in JavaScript?
 
 There are several design patterns that are commonly used in JavaScript:
 
@@ -912,7 +1137,7 @@ There are several design patterns that are commonly used in JavaScript:
 
 These are some of the most common patterns used in JavaScript, they are designed to help developers to write more maintainable, scalable, and easy to understand code. They also help to make the right decisions when choosing the tools, technologies, and design patterns to use.
 
-### 49. What is SOLID?
+### 50. What is SOLID?
 
 SOLID is an acronym that stands for five design principles for object-oriented programming and class design:
 
