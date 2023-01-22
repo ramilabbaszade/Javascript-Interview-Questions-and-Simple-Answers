@@ -1,4 +1,4 @@
-# Interview questions & answers
+# Javascript interview questions & answers
 
 Credit: [https://github.com/sudheerj/javascript-interview-questions](https://github.com/sudheerj/javascript-interview-questions)
 
