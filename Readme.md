@@ -1,6 +1,6 @@
 # Javascript interview questions & answers
 
-Credit: [Interview Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/main/src/questions/javascript-questions.md)
+Credit: [Front-end-Developer-Interview-Questions/javascript-questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/main/src/questions/javascript-questions.md)
 
 ### 1. Explain event delegation
 
