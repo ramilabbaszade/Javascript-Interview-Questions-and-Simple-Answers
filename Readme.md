@@ -6,6 +6,7 @@ Credit: [Front-end-Developer-Interview-Questions/javascript-questions](https://g
 
 Event delegation is a way to handle events that happen on multiple elements at once, by using a single event handler on a parent element.
 
+
 First example: Imagine you have a basket of apples, and you want to know when one of the apples is picked. Instead of putting a separate tag on each apple, you can put a tag on the basket and when someone picks an apple, the basket will know.
 
 In the same way, on a website, you can have a lot of buttons, and you can put an event listener on the parent element (like a container) and check which button was clicked.
